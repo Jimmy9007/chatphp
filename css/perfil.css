@@ -1,0 +1,1313 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: sans-serif;
+}
+.sectionPerfil,.sectionBuscarAmigos,.sectionChat {
+    width: 70%;
+    height: 15em;
+    background-color: #fff;
+    margin: 0% auto !important;
+    padding: 1em;
+    position: relative;
+    top: 8em;
+    border: 1px solid #DCDADA;
+    border-radius: 4px;
+}
+section#sectionGaleria {
+    margin-top: 8px !important;
+    height: auto !important;
+}
+#btnSubirFotos {
+    padding: .1em 4px;
+    background: #3B7DD8;
+    color: white;
+    float: right;
+    font-size: 14px;
+    margin-right: 0 !important;
+    margin: 1.3em;
+}
+section.sectionBuscarAmigos{
+    width: 80%;
+    height: auto;
+    top: 5em;
+}
+.sectionChat {
+    width: 100%;
+    height: 100%;
+    bottom: 0 !important;
+    position: absolute;
+    padding: 0;
+    top: 0;
+    background: #dcdee3;
+    border: none;
+}
+.sectionChat .usuariosEnLinea {
+    background: transparent;
+    width: 13em;
+    height: 100%;
+    float: right;
+    bottom: 0 !important;
+    position: relative;
+}
+.sectionChat .usuariosEnLinea #cajaAmigos {
+    background: #394264;
+    width: 100%;
+    height: 30em;
+    bottom: 0 !important;
+    position: absolute;
+    float: right;
+}
+.sectionChat .usuariosEnLinea #cajaAmigos #amigosConectados {
+    background: #DCD7D7;
+    height: 27.7em;
+    top: 0;
+    right: 0 !important;
+    border: 1px solid #B9B5B5 !important;
+}
+section.notificaciones {
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    margin-top: -1em;
+}
+section.notificaciones .imgNotifSolicitudAmistad {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    -webkit-filter: brightness(21%);
+    margin-right: 6px;
+    filter: brightness(27%);
+}
+section.notificaciones .imgNotifSolicitudAmistad:hover{
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+}
+.divUsuariosNotificaciones {
+    background: #dcdcdc;
+    padding: 4px;
+    position: relative;
+    width: 95%;
+    height: 2em;
+    margin: auto;
+    border: 1px solid #C1BEBE !important;
+}
+.divUsuariosNotificaciones img.optionMiniaturaAmistad {
+    width: 1.1em;
+    float: right;
+    position: relative;
+    top: 8px;
+    margin-left: 10px;
+    right: 5px;
+    -webkit-filter: invert(10%);
+    cursor: pointer;
+}
+.divUsuariosNotificaciones img.fotoUsuarioPreview {
+    width: 2em;
+    height: 2em;
+    float: left;
+}
+.divUsuariosNotificaciones .spanNombreApellidoAmistad {
+    font-size: 13px;
+    position: relative;
+    top: 7px;
+}
+.divUsuariosNotificaciones .spanNombreApellidoAmistad {
+    font-size: 13px;
+    position: absolute;
+    top: 13px;
+    width: 12em;
+    float: left;
+    left: 3.4em;
+    text-align: left;
+}
+#textoChatAmigosOnline{
+    color: #333;
+    text-decoration: none;
+}
+.divAmigosOnlineChat{
+    background: #DCD7D7;
+    border: none !important;
+    cursor: pointer;
+}
+.divAmigosOnlineChat:hover{
+    background: #C6C6C6;
+}
+.usuarioSolicAmistad {
+    display: none;
+    background: #fafafa;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+span.txtNotificacionesDeAmigos {
+    font-size: 14px;
+    color: #626262;
+}
+div.galeriaDeImagenes{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.fotosGaleriaBaseDatos img.imgsGaleria {
+    width: 10em;
+    height: 9.6em;
+}
+div.divEliminarImagenByIdGaleria {
+    background: #D7DBE0;
+    width: 8em;
+    border-bottom: 1px solid #aaa !important;
+    cursor: pointer;
+    position: absolute;
+    height: 0;
+    transition: all 0.2s ease-in;
+}
+img.eliminarImagenByIdGaleria,.imgSelectProfilePhoto,.selectImPortada {
+    opacity: 0;
+    padding: 5px 3,4em;
+    background: #fafafa;
+    position: absolute;
+    transition: all 0.2s ease-in;
+    padding: 3px;
+}
+.imgSelectProfilePhoto {
+    margin-top: 1.8em;
+    background: rgb(255, 255, 255);
+}
+img.eliminarImagenByIdGaleria:hover {
+    background: rgb(59, 125, 216);
+    border-radius: 4px;
+}
+img.selectImPortada {
+    margin-top: 3.5em;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: #fafafa;
+    padding: 3px;
+}
+.fotosGaleriaBaseDatos:hover img.eliminarImagenByIdGaleria {
+    opacity: 1;
+    transition: all 0.4s ease-in;
+}
+.fotosGaleriaBaseDatos:hover img.imgSelectProfilePhoto {
+    opacity: 1;
+    transition: all 0.4s ease-in;
+}
+.fotosGaleriaBaseDatos:hover img.selectImPortada {
+    opacity: 1;
+    transition: all 0.4s ease-in;
+}
+.fotosGaleriaBaseDatos:hover div.divEliminarImagenByIdGaleria {
+    padding: 5px 0px 3px;
+    height: 1em;
+    transition: all 0.3s ease-in;
+}
+div.galeriaDeImagenes .fotosGaleriaBaseDatos {
+    width: 10.4em;
+    height: 9.8em;
+    padding: 4px;
+    margin: 4px;
+    box-shadow: -2px 1px 4px 1px rgba(31, 37, 61, 0.4);
+    display: inline-block;
+}
+div#FotoPerfil {
+    width: 10em;
+    position: absolute;
+    height: 10em;
+    box-shadow: 1px 1px 6px 1px rgba(51, 51, 51, 0.31);
+    margin-top: 1em;
+}
+div#FotoPerfil:hover {
+    -webkit-filter: saturate(140%);
+    filter: saturate(140%);
+}
+.fotoUsuario {
+    position: relative;
+    float: left;
+    width: 10em;
+    cursor: pointer;
+    height: 10em;
+}
+
+.fotoUsuarioZoom {
+    width: 100%;
+    transition: all 1s ease-in;
+}
+img#imgZoom {
+    float: right;
+    top: 8.4em !important;
+    right: .1em !important;
+    opacity: 0;
+    width: 1.5em;
+    transition: all 0.2s ease-in;
+    position: absolute;
+    z-index: 1;
+}
+div#FotoPerfil:hover #imgZoom {
+    opacity: 1;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+div#FotoPerfil:hover #nuevaFotoPerfil{
+    opacity: 1;
+}
+.spanTexto {
+    color: #383737;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: relative;
+    float: left;
+    left: 7.4em;
+    padding: 1px;
+    cursor: pointer;
+    text-align: left;
+    display: block;
+    width: 55%;
+    transition: all 0.3s ease-in;
+}
+
+#idSpanGenero,#idSpanFechaNac {
+    font-weight: 100;
+    font-size: 1.3em;
+    left: 8.5em;
+    color: #505F96;
+    margin-top: 6px;
+}
+span#idSpanEstadoUsuario {
+    font-size: 1em;
+    left: 11em;
+    margin-top: 5px;
+    color: #3468af;
+}
+span#idSpanEstadoOnline{
+    color: green;
+}
+span#idSpanEstadoOffline{
+    color: red;
+}
+span.spanTexto:hover {
+    border-radius: 0 16px 16px 0px;
+}
+div.cantTotalPhotos,.cantTotalAmigos {
+    padding: 1em 0em;
+    display: block;
+    width: 24%;
+    margin: auto !important;
+    text-align: left;
+    float: left;
+}
+.cantTotalAmigos {
+    width: 100%;
+    padding: 1em;
+    text-align: left;
+    float: none;
+}
+
+.cantTotalPhotos img, .cantTotalAmigos img {
+    width: 20px;
+    top: 2px;
+    position: relative;
+}
+span.spanGaleriaDeImagenes,.spanCantidadAmigos,.spanCantidadAmigosProfileDB {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #434343;
+}
+img#imgFondoPerfil {
+    width: 100%;
+}
+.divFotoZoom,#divFotoZoomGaleria {
+    background: #FFF;
+    width: 70%;
+    margin: 0 auto;
+    z-index: 1000;
+    position: absolute;
+    display: none;
+    padding: 10px;
+    box-shadow: 2px 2px 7px 2px rgba(51,51,51,0.46);
+    cursor: move;
+    top: -6em;
+}
+#divFotoZoomGaleria {
+    width: 50%;
+    height: 80%;
+    top: 9%;
+    position: fixed;
+    left: 22%;
+}
+div.fotosGaleriaBaseDatos{
+    cursor: pointer;
+}
+div.galeriaDeImagenes .fotosGaleriaBaseDatos:hover{
+    -webkit-filter: saturate(160%);
+    filter: saturate(160%);
+    opacity: 0.9;
+}
+img.imgCerrarFoto {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    cursor: pointer;
+    width: 14px;
+}
+.ampliarFotoPerfil {
+    width: 100%;
+    height: 100%;
+}
+.backgroundPerfil {
+    width: 100%;
+
+}
+.backgroundPerfil img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 70%;   
+}
+div#nuevaFotoFondo {
+    position: relative;
+    top: 5em;
+    left: 0;
+    width: 30%;
+}
+.backgroundPerfil:hover #nuevaFotoFondo {
+    opacity: 1;
+    transition: all 0.3s ease-in;
+}
+.btnCambiarPortada {
+    width: 10em;
+    height: 1.2em;
+    background: rgba(222, 222, 222, 0.50) url("../img/icon/camera.png") no-repeat;
+    position: relative;
+    z-index: 222;
+    padding: 8px;
+    border-radius: 4px;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    top: 1em;
+    left: 1.2em;
+    opacity: 0;
+    transition: 0.2s ease-in;
+}
+.btnCambiarPortada span{
+    float: right;
+}
+.btnCambiarPortada:hover{
+    background: rgba(222, 222, 222, 0.80) url("../img/icon/camera.png") no-repeat;
+    color: black;
+}
+.backgroundPerfil:hover .btnCambiarPortada{
+    opacity: 1;
+    transition: 0.2s ease-in;
+}
+.divEditText {
+    width: 30em;
+    transition: all 0.3s ease-in;
+    display: inline-block;
+    float: left;
+}
+#divTextoUsuario{
+    margin-top: 1em;
+}
+.imgEditText {
+    background: #00B7FF;
+    width: 2em;
+    float: right;
+    cursor: pointer !important;
+    height: 1.9em;
+    display: none;
+    transition: all 0.3s ease-in;
+}
+.imgEditText img {
+    margin-top: 6px;
+    width: 15px;
+}
+#imagenEditarGenero {
+    margin-top: 6px;
+    height: 1.66em;
+}
+.divEditText:hover .quitarFormatoClic{
+    background: transparent !important;
+    transition: 0;
+}
+.divEditText:hover .spanTexto{
+   background: #CAECFC !important;
+   transition: all 0.3s ease-in !important;
+}
+.divEditText:hover .imgEditText {
+   display: block !important; 
+   background: #00B7FF; 
+   transition: all 0.3s ease-in !important;
+}
+.sectionPerfil:hover .spanTexto{
+    background: #dddddd;
+    transition: all 0.3s ease-in !important;
+}
+.sectionPerfil:hover .quitarFormatoClic{
+    background: none;
+    cursor: default;
+}
+.sectionPerfil:hover .imgEditText{
+    display: block !important;  
+    background: #dddddd;
+    transition: all 0.3s ease-in !important;
+}
+.imgEditText:hover{
+    background: #00B7FF !important; 
+}
+div.ventanaModal {
+    width: 18em;
+    height: 6em;
+    position: absolute;
+    left: 28em;
+    display: none;
+    top: 25px;
+}
+div#editGenero {
+    top: 3.8em;
+}
+#ModalEditFechaNac{
+    top: 6em;
+}
+.triangulo {
+    width: 0;
+    height: 0;
+    border-style: solid !important;
+    border-color: transparent #B8B6B6 transparent transparent !important;
+    border-width: 12px 12px 12px 3px !important;
+    display: inline-block;
+    position: relative;
+    top: -4em;
+    left: 4px;
+}
+.triangulo:after{
+        content: "\0020";
+    display: block;
+    position: absolute;
+    bottom: -12px;
+    left: 1px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 12px 12px 0;
+    border-color: transparent #fff transparent transparent;
+}
+#trianguloGenero {
+    top: -64px;
+}
+#trianguloFechaNac {
+    top: -67px;
+}
+form.formVentanaModal,#formUpdateDatos {
+    width: 14em;
+    background: #FFFFFF;
+    display: inline-block;
+    height: 7em;
+    padding: 12px;
+    border-radius: 3px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.64);
+}
+form.formVentanaModal input,#formUpdateDatos input {
+    width: 7em;
+    padding: 6px;
+    margin-top: 10px;
+    border: 1px solid rgba(145, 142, 142, 0.59) !important;
+}
+input.inputUpdateOtrosDatos {
+    width: 85% !important;
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
+}
+form.formVentanaModal input#genero,input#fechaNac{
+    width: 15.4em;
+}
+label.labelVentanaModal,label.labelOtrosDatos{
+    float: left;
+    margin-left: 6px;
+    color: gray;
+}
+label.labelOtrosDatos{
+    margin-left: 11px !important;
+}
+span.labelOtrosDatos {
+    color: #AAA8A8;
+    float: left;
+    border-bottom: 1px solid #AAA8A8 !important;
+    width: 100%;
+}
+form#formEditNombre button{
+    margin-top: 1em;
+}
+img.imgCloseModal {
+    position: absolute;
+    left: 16em;
+    top: .4em;
+    cursor: pointer;
+    width: 16px;
+}
+#closeCambiarPortada {
+    position: relative;
+    right: 10px !important;
+    top: -6px;
+    margin-right: -6px;
+    left: 0;
+    float: right;
+}
+span.closeEsc {
+    position: absolute;
+    font-size: 13px;
+    color: white
+}
+div#contentDinamico {
+    background: red;
+    width: 10em;
+    height: 10em;
+    margin: auto;
+    color: white;
+    margin-top: 10em;
+    color: black;
+}
+input.btnGuardarVentanaModal {
+    background: gray;
+    color: white;
+    font-size: 14px;
+    padding: 3px 6px;
+    border-radius: 4px;
+    cursor: not-allowed;
+}
+
+#verifCorreoDup {
+    border: 2px solid #333 !important;
+    width: 10em;
+    height: 10em;
+    z-index: 1000000;
+    position: absolute;
+    left: 20em;
+    top: 10em;
+}
+
+select#genero {
+    width: 16em;
+    background: #F1F2F5;
+    padding: 7px;
+    margin-top: 6px;
+    border: 1px solid #BEBEBE !important;
+}
+#actualizarGenero{
+    top: 1em;
+}
+#imgSettings {
+    width: 1.8em;
+    float: right;
+    transition: 0.4s ease-in;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1em;
+}
+
+div#actualizarOtrosDatos {
+    width: 32%;
+    right: 1em;
+    position: absolute;
+}
+#formUpdateDatos{
+    width: 85%;
+    display: none;
+    transition: 0.4s ease-in;
+    margin-top: 16px;
+    height: auto;
+}
+.alertFotoPerfilGrande {
+    position: absolute;
+    background: red;
+    color: white;
+    width: 95%;
+    font-size: 14px;
+    text-align: center;
+    z-index: 1;
+    left: 0;
+    opacity: 0;
+    -webkit-animation-name: MiAnimacion; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 6s; /* Chrome, Safari, Opera */
+    animation-name: MiAnimacion;
+    animation-duration: 6s;
+    transition: all 1s ease-in;
+    padding: 4px;
+}
+@-webkit-keyframes MiAnimacion {
+    from {opacity: 1;}
+    to {opacity: 1;}
+}
+@keyframes MiAnimacion {
+    from {opacity: 1;}
+    to {opacity: 1;}
+}
+/*estilos para portada-*/
+.cambiarPortada {
+    width: 50%;
+    height: 40%;
+    position: relative;
+    margin: auto;
+    top: 20%;
+    z-index: 10;
+    background: #FFFFFF;
+    padding: 12px;
+    border-radius: 3px;
+    box-shadow: 0 0 4px 3px rgba(51, 51, 51, 0.42);
+    display: none;
+}
+.imgsPortadaDefault{
+    height: 10em;
+    margin-bottom: 2em;
+}
+
+/*IMAGENES DE PORTADA*/
+.imagenesDePortada {
+    width: 4em;
+    height: 4em;
+    border-radius: 10em;
+    margin-right: 1em;
+    margin-top: 1em;
+    cursor: pointer;
+}
+.portadasEnBaseDatos {
+    margin-bottom: 10px;
+}
+div#divRespuestaAjax {
+    width: 10em;
+    height: 10em;
+    z-index: 100;
+    background: red;
+}
+div#divUploadMultitplesFotos {
+    background: transparent;
+    width: 94%;
+    height: 4em;
+    margin: auto;
+}
+.capaSubirFotos {
+    background: transparent;
+    width: 18.4em;
+    height: 4em;
+    float: right;
+}
+#uploadFileGaleria {
+    position: relative;
+    opacity: 1;
+    float: left;
+    top: 1.1em;
+    width: 10em;
+    background: #aaa url("../img/icon/camera.png") no-repeat;
+    font-weight: bold;
+}
+#uploadFileGaleria:hover{
+    background: white url("../img/icon/camera.png") no-repeat;
+}
+#uploadFileGaleria p#txtUploadFile{
+    color: black;
+}
+#uploadFileGaleria input#inputMultiplesFotos {
+    opacity: 0;
+    position: relative;
+    width: 12em;
+    height: 2em;
+    top: -8px;
+}
+
+/*cargando mientras se actualiza la pagina*/
+img#actualizarFotos {
+    width: 1.6em;
+    left: 22em;
+    top: 2.2em;
+}
+.usuario,.amigoDeAmigo {
+    width: 22em;
+    padding: 8px;
+    height: auto;
+    border: 1px solid #D3C8C8 !important;
+    display: inline-block;
+    margin: 5px;
+    transition: 0.4s ease-in;
+}
+.usuario:hover {
+    background: rgba(221, 221, 221, 0.64);
+    transition: 0.4s ease-in;
+    cursor: pointer;
+}
+.amigoDeAmigo:hover {
+    background: rgba(221, 221, 221, 0.64);
+    transition: 0.4s ease-in;
+    cursor: pointer;
+}
+.usuario:hover .spanNombreApellido {
+    color: #171616;
+}
+.miniaturaFotoPerfil {
+    width: 5em;
+    height: 5em;
+    position: relative;
+    float: left;
+}
+.spanNombreApellido {
+    font-weight: bold;
+    vertical-align: top;
+    position: relative;
+    top: 2em;
+    float: right;
+    text-align: left;
+    width: 60%;
+    right: 3em;
+    color: #545353
+}
+.btnAgregarAmigo {
+    background: #D3C8C8 !important;
+    position: relative;
+    vertical-align: top !important;
+    top: 4em;
+    left: 9em;
+    width: 8em;
+}
+img.addFriend,img.deleteFriend {
+    position: relative;
+    top: 1.8em;
+    width: 1.4em;
+    right: -12em;
+    cursor: pointer;
+    float: right;
+    -webkit-filter: invert(70%);
+    filter: invert(70%);
+    transition: all 0.3s linear;
+}
+img.addFriend.rechazarAmistad {
+    margin-right: 1em;
+}
+img.addFriend:hover {
+    -webkit-filter: invert(0%);
+    filter: invert(0%);
+    transition: all 0.3s linear;
+}
+div#BuscarUsuario,#BuscarAmigo {
+    width: 84%;
+    height: 1.8em;
+    margin: auto;
+    padding: 7px;
+}
+#BuscarAmigo {
+    width: 99.6%;
+    height: 2.5em;
+    margin: auto;
+    padding: 0px;
+    background: white;
+    bottom: 0 !important;
+    position: absolute;
+    border-left: 1px solid #aaa;
+    border-top: 1px solid #aaa;
+}
+.buscardorDeAmigos {
+    background: white;
+    width: 12.95em;
+    height: 2.2em;
+    position: relative;
+    bottom: -5px;
+    right: 0 !important;
+}
+div#BuscarUsuario input#inputBuscarUsuario {
+    padding: 6px;
+    float: right;
+    border-radius: 1px;
+    margin-top: 4px;
+    width: 12em;
+    border: 1px solid #D3C8C8 !important;
+    background: url(../img/icon/searchUser.png) no-repeat;
+    background-size: 1.5em;
+    background-position: 11em;
+}
+div#BuscarAmigo input#inputBuscarAmigo {
+    padding: 6px;
+    float: left;
+    border-radius: 1px;
+    margin-top: 4px;
+    width: 12em;
+    margin-top: 1px;
+}
+input#inputBuscarAmigo:focus{
+    outline:0px;
+}
+/*CONFIGURACIONES PARA TOOLTIP*/
+  .ui-tooltip {
+    padding: 8px 18px;
+    color: #333;
+    border-radius: 2px;
+    font: bold 9px arial !important;
+    text-transform: uppercase;
+    box-shadow: 0 0 5px gray;
+  }
+span.resultBusqueda {
+    font-weight: bold;
+    color: #CC1C4C;
+}
+/* se actualiza en tiempo real con ajax*/
+
+.spanCantidadSolicitudesAmistad {
+    color: white;
+    position: relative;
+    margin: 2px;
+    background: #e64c65;
+    width: 1.4em;
+    height: 1em;
+    position: absolute;
+    border-radius: 4px;
+    left: 7.3em;
+    top: -14px;
+    padding: 2px;
+    box-shadow: 1px 1px 1px 1px rgba(17, 17, 17, 0.21);
+    font-size: 13px;
+    display: none;
+    z-index: 1;
+}
+    .spanNombreApellidoAmistad{
+        color: #3468af;
+        cursor: pointer;
+    }
+    .spanNombreApellidoAmistad:hover{
+        text-decoration: underline;
+    }
+.usuariosEnLinea {
+    background: transparent;
+    width: 10em;
+    height: 10em;
+    float: right;
+}
+#imgOnline,#imgOnlineVentanaChat {
+    width: 7px;
+    height: 7px;
+    position: relative;
+    right: 8px;
+    float: right;
+    top: 5px;
+    background: #2AAA18;
+    border-radius: 7px;
+}
+span#imgOnlineVentanaChat {
+    float: left;
+    right: 5px;
+}
+a.linkToProfileAmigo:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+img#imgLoadingFrinedsOline {
+    width: 2em;
+    position: relative;
+    top: 10%;
+}
+.ventanaChat {
+    background: #aaa8a8;
+    width: 14em;
+    height: 18em;
+    bottom: 0;
+    position: absolute;
+    right: 16em;
+    display: none;
+    border: 1px solid #B3B0B0;
+    border-bottom: 0;
+}
+.cabeceraNombre {
+    height: 1.5em;
+    color: white;
+    background: #465079;
+    font-size: 14px;
+    text-align: left;
+    padding: 4px 10px 0px 12px;
+    border-radius: 2px;
+}
+.cajaMensajes {
+    width: 100%;
+    height: 13.4em;
+    background: #EDEEF1;
+    color: black;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding-bottom: 1em;
+}
+.cajaNuevoMensaje {
+    background: #EDEEF1;  
+    width: 100%;
+    height: 2em;
+}
+input#inputNuevoMensaje {
+    width: 93%;
+    height: 1.4em;
+    font-size: 14px;
+    padding: 6px;
+    border-top: 1px solid #BABBBD;
+}
+input#inputNuevoMensaje:focus{
+    outline:0px;
+}
+.divMensaje {
+    width: auto !important;
+    text-align: left;
+    padding-top: 4px;
+    padding-bottom: 4px; 
+    margin-bottom: 4px;
+    color: black;
+    font-size: 14px;
+    border-radius: 1em 1em 1em 0em;
+}
+.separadorDeMensajes {
+    margin: 4px;
+    text-align: left;
+    border-radius: 1em 1em 1em 0em;
+    background: #C3D8EC;  
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1px;
+    padding-bottom: 4px;
+    border: 1px solid #BABBBD;
+
+}
+.fotoUserLogin{
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 1em;
+    position: relative;
+    top: 4px;
+    margin-right: 5px;
+}
+img.emoticon {
+    position: relative;
+    top: -1.5em;
+    width: 20px;
+    height: 20px;
+    left: 5.5em;
+    cursor: pointer;
+}
+div#menuTopParaMovil {
+    background: #465079;
+    width: 100%;
+    height: 4em;
+    box-shadow: 1px 1px 2px 2px rgba(47, 46, 46, 0.63);
+    position: fixed; 
+    display: none;
+}
+.imgCloseVentanaChat {
+    position: absolute;
+    right: 8px;
+    top: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-stretch: expanded;
+}
+/*--------------media queries para adaptar------------------------*/
+@media screen and (max-width: 1200px) {
+.sectionPerfil, .sectionBuscarAmigos{
+  width: 88% !important;
+ }
+
+}
+@media screen and (min-width: 801px) {
+    #containerHeaderFooter{
+    display: block !important;
+    z-index: 10;
+}
+span#idSpanEstadoUsuario {
+    left: 11em !important;
+    margin-top: 5px;
+    color: #3468af;
+    font-size: 16px !important;
+}
+}
+@media screen and (max-width: 800px) {
+    *{
+        transition: all 0.0s ease-in;
+    }
+span#idSpanEstadoUsuario {
+    left: 11em !important;
+    margin-top: 5px;
+    color: #3468af;
+    font-size: 16px !important;
+}
+div#menuTopParaMovil {
+    background: #465079;
+    width: 100%;
+    height: 4em;
+    display: block;
+    z-index: 10;
+}
+.sectionPerfil, .sectionBuscarAmigos{
+  width: 88% !important;
+ }
+ #containerPrincipal {
+    margin-left: 0 !important;
+    width: 100%;
+    height: 100%;
+}
+
+#containerHeaderFooter{
+    display: none;
+    z-index: 10;
+}
+div#logo img {
+    background: white;
+    border-radius: 2em;
+}
+img#imgLogoPerfil {
+    background: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 4em;
+    position: relative;
+    margin-left: 2em;
+    float: left;
+    top: 0.90em;
+    padding: 4px;
+    border: 2px solid #3B7DD8;
+}
+.responsiveMenu {
+    background: white !important;
+    width: 25px;
+    height: 25px;
+    float: right;
+    position: relative;
+    margin: 1.4em 2.4em;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btnCambiarPortada {
+    background: white url("../img/icon/camera.png") no-repeat;
+    color: #212121;
+    opacity: 1;
+    position: relative;
+    top: 7em;
+    margin: auto;
+    transition: 0s;
+    z-index: 0;
+}
+div#contenedor2 {
+    margin-left: 0;
+    width: 100%;
+    margin: auto;
+}
+section.notificaciones .imgNotifSolicitudAmistad{
+    margin-top: 2em;
+}
+nav{
+    margin-top: 3em;
+}
+div#FotoPerfil {
+    width: 5em;
+    position: absolute;
+    height: 5em;
+    box-shadow: 1px 1px 6px 1px rgba(51, 51, 51, 0.31);
+    margin-top: 0em;
+    z-index: 1;
+}
+.fotoUsuario{
+    width: 5em;
+    height: 5em;
+}
+#divTextoUsuario {
+    margin: 0;
+    right: 5em;
+}
+.divFotoZoom {
+    width: 80%;
+    left: 8%;
+    top: -90px;
+}
+.divEditText {
+    width: 28em;
+    transition: all 0s ease-in;
+    display: inline-block;
+    float: left;
+    position: relative;
+    right: 5em;
+    margin: 0;
+}
+.spanTexto {
+    color: #383737;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: relative;
+    padding: 0;
+    cursor: pointer;
+    text-align: left;
+    display: block;
+    width: 60%;
+    transition: all 0s ease-in;
+}
+.sectionPerfil:hover .spanTexto{
+    background: none;
+    transition: all 0s ease-in !important;
+}
+.sectionPerfil:hover .imgEditText{
+    background: none;
+    transition: all 0s ease-in !important;
+    display: none !important;
+}
+.divEditText:hover .imgEditText {
+   display: block !important; 
+   background: none; 
+   transition: all 0s ease-in !important;
+   display: none !important;
+}
+div#imagenEditarGenero img {
+    display: none;
+}
+div#imagenEditarGenero {
+    width: 0;
+    height: 0;
+    display: none;
+}
+div.ventanaModal {
+    left: 33%;
+    z-index: 1;
+    top: 5px;
+}
+div#editGenero {
+    top: 2em;
+}
+#ModalEditFechaNac {
+    top: 3.8em;
+}
+#formUpdateDatos{
+    width: 90%;
+}
+.cambiarPortada{
+    width: 90%;
+    top: 10%;
+}
+#divFotoZoomGaleria {
+    width: 70%;
+    height: 60%;
+    top: 11%;
+    position: fixed;
+    margin: auto;
+    left: 12%;
+}
+span.closeEsc {
+display: none;
+}
+img#imgZoom {
+    display: none;
+}
+div#nuevaFotoPerfil {
+    position: absolute;
+    top: 5em;
+    width: 5em;
+    left: inherit;
+    opacity: 1;
+    background-position: 1.4em;
+}
+span.spanGaleriaDeImagenes, .spanCantidadAmigos, .spanCantidadAmigosProfileDB{
+    font-size: 1em;
+}
+}
+@media screen and (max-width: 500px) {
+div#actualizarOtrosDatos {
+    width: 50%;
+    right: 2em;
+    position: absolute;
+}
+  div.ventanaModal {
+    left: 24%;
+    z-index: 1;
+    top: 5px;  
+}
+div#amigosByidLogueado .usuario{
+    padding: 0;
+    position: relative;
+    width: 19em;
+    margin: 0;
+}
+div#amigosByidLogueado .usuario .spanNombreApellido{
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 0;
+    top: 1.8em;
+}
+img.addFriend, img.deleteFriend{
+    left: 9em;
+}
+.miniaturaFotoPerfil{
+    width: 4em;
+    height: 4em;
+}
+#divFotoZoomGaleria {
+    width: 70%;
+    height: 50%;
+    top: 11%;
+    position: fixed;
+    margin: auto;
+    left: 12%;
+}
+div.cantTotalPhotos, .cantTotalAmigos {
+    padding: 1em 0em;
+    display: block;
+    width: 34%;
+    margin: auto !important;
+    text-align: left;
+    float: left;
+}
+#uploadFileGaleria {
+    position: relative;
+    opacity: 1;
+    float: left;
+    top: 1.1em;
+    width: 2em;
+    background: #aaa url("../img/icon/camera.png") no-repeat;
+    font-weight: bold;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-position: 4px;
+}
+div#uploadFileGaleria:hover {
+    background-position: 4px;
+}
+#uploadFileGaleria p#txtUploadFile {
+    color: black;
+    display: none;
+}
+.capaSubirFotos{
+    width: 12em;
+}
+.spanTexto{
+    width: 46%;
+}
+/*ESTILOS QUERY PARA BUSCAR AMIGOS*/
+img.addFriend, img.deleteFriend {
+    left: 11em;
+}
+#imgOnline, #imgOnlineVentanaChat{
+    right: 18px;
+}
+div#BuscarUsuario input#inputBuscarUsuario {
+    padding: 6px;
+    float: right;
+    border-radius: 1px;
+    margin-top: 4px;
+    width: 12em;
+    border: 1px solid #D3C8C8 !important;
+    background: url(../img/icon/searchUser.png) no-repeat;
+    background-size: 1.5em;
+    background-position: 15em;
+    position: relative;
+    right: 2.8em;
+    width: 16em;
+}
+.usuario {
+    width: 20em;
+}
+div#idSpanResponsive {
+    width: 100%;
+}
+}/*cierre del media querie 500*/

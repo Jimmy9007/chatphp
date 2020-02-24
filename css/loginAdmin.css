@@ -1,0 +1,97 @@
+.imgLogin {
+    width: 1.6em;
+    height: 1.6em;
+    padding-bottom: 1.6em;
+}
+#blockImgLogin {
+    width: 2em;
+    float: left;
+    margin-left: 2.3em;
+    margin-top: 8px;
+}
+form {
+    position: relative;
+    background: #E4E4E4;
+    width: 20em;
+    border-radius: 6px;
+    top: 10em;
+    padding-bottom: 1.6em;
+}
+input {
+    padding: 11px;
+    background: rgba(255, 252, 252, 0.25) !important;
+    box-shadow: 2px 2px 4px rgba(51, 51, 51, 0.62);
+    margin-bottom: 1em;
+    width: 58% !important;
+    color: black;
+    border-radius: 2px;
+    display: block;
+    float: right;
+    margin-right: 3em;
+}
+button#login {
+    color: #FFF;
+    background: #328998;
+    padding: 10px;
+    margin: 5px auto;
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    width: 77%;
+    box-shadow: inset 0 0 0 0 #0BF;
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+    border-radius: 4px;
+    position: relative;
+    right: 3em;
+}
+button#login:hover {
+    box-shadow: inset 0 -70px 0 0 #08B;
+}
+input::-webkit-input-placeholder {
+  color: gray;
+  font-size: 1.1em
+}
+input:-moz-placeholder {
+    color: gray;
+  font-size: 1.1em
+}
+input:-ms-input-placeholder { 
+    color: gray;
+  font-size: 1.1em 
+}
+.txtForm {
+    background-color: #cc324b;
+    position: relative;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: sans-serif;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: 1.6em;
+}
+  .error_input{
+    border: 1px solid #FF0606 !important;
+}
+.msgError {
+    background: rgb(255, 57, 57) url("../img/icon/duplicado.png") no-repeat;
+    width: 75%;
+    height: 2.2em;
+    margin-bottom: 1em;
+    border-radius: 2px;
+    background-position: 13.5em 6px;
+    cursor: pointer;
+    display: none;
+}
+p.textError {
+    color: white;
+    position: absolute;
+    margin: 9px 2.5em;
+}

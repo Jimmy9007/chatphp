@@ -1,0 +1,312 @@
+input {
+    padding: 6px;
+    background: white !important;
+    margin-bottom: 10px !important;
+    width: 40% !important;
+    color: black;
+    margin: auto;
+    display: inline-block;
+    font-size: 12px;
+}
+input::-webkit-input-placeholder {
+  color:gray;
+  font-size: 12px;
+}
+input:-moz-placeholder {
+    color:gray;
+  font-size: 12px;
+}
+input:-ms-input-placeholder { 
+    color:gray;
+  font-size: 12px; 
+}
+form {
+    position: relative;
+    background: #E4E4E4;
+    width: 29em;
+    border-radius: 6px;
+    padding-bottom: 1.6em;
+    top: 0px !important;
+    margin: auto;
+}
+.error_input{
+    border: 1px solid #FF0606 !important;
+}
+#formEditar {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 11em;
+}
+img#fotoPerfil {
+    width: 6em;
+    height: 6em;
+    position: relative;
+    margin: auto;
+    border-radius: 4em;
+    z-index: 1;
+    float: left;
+    margin-left: 5.6em;
+}
+
+.ui-widget-overlay {
+    background: url("../img/icon/body.png"), 
+    rgb(0, 0, 0) !important;
+    opacity: .5 !important;
+    filter: Alpha(Opacity=30) !important;
+    support: IE8 !important;
+}
+.ui-dialog .ui-dialog-titlebar {
+    padding: .5em 1em;
+    position: relative;
+    background: #B34747;
+    color: white;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    background: rgba(208, 51, 51, 0.68);
+    font-weight: normal;
+    color: #ffffff;
+    border: none;
+}
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable.ui-resizable {
+    padding: 0; /*sin padding en los titulos de los dialog*/
+}
+.ui-accordion .ui-accordion-content {
+    padding: 1em 2.2em;
+    border-top: 0;
+    overflow: inherit;
+    height: 480px;
+}
+input[type="search"] {
+    width: 60% !important;
+    border: 2px solid #DF7373 !important;
+}
+table.dataTable tbody tr:hover{
+    background-color: #ccc !important;
+    
+}
+.textarea {
+    width: 86.6%;
+    height: 7em;
+    position: relative;
+    resize: none;
+}
+#textareaEdit {
+    width: 43%;
+    height: 7em;
+    position: relative;
+    resize: none;
+    float: left;
+    left: 2em;
+}
+table#tablaUsuarios {
+    width: 100% !important;
+}
+.txtForm {
+    background-color: #cc324b;
+    position: relative;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: sans-serif;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: 1.6em;
+} 
+div#tabs {
+    padding: 0;
+    width: 99.4%;
+    position: relative !important;
+    margin: auto;
+    margin-left: 0.6%;
+    height: 100%;
+}
+
+div#login {
+    width: 20%;
+    top: 1em;
+    font-size: 12px;
+    position: relative;
+    float: right;
+}
+div#login p{
+    display: inline-block;
+    position: relative;
+    top: -1.1em;
+}
+div#login a {
+    display: inline-block;
+    position: relative;
+    top: -1.1em;
+    background: rgba(49, 133, 158, 0.60);
+    
+    color: #FFFFFF;
+    padding: 5px 10px;
+    /* border-radius: 6px; */
+    /* font-size: 12px; */
+    margin-left: 5px;
+    transition: all 0.4s ease-in;
+    border-radius: 2px;
+}
+div#login a:hover{
+    background: rgba(49, 133, 158, 0.89);
+}
+a.button {
+    display: inline-block;
+    position: relative;
+    background: #B34747;
+    color: white !important;
+    padding: 7px 12px;
+    transition: all 0.4s ease-in;
+    border-radius: 4px;
+    margin-top: 1em;
+    cursor: pointer;
+}
+a.button:hover{
+    background-color: #E63535;
+    transition: all 0.4s ease-in;
+}
+p#userEditName{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+div#login img#imgLogout{
+    width: 2em;
+    height: 2em;
+}
+img#imgloginUser {
+    width: 20px;
+    border-radius: 2em !important;
+    position: relative;
+    top: -6px;
+    height: 20px;
+}
+tr.cabecera {
+    background: #007FFF;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+td {
+    padding: 4px;
+    font-size: 12px;
+    text-align: center; 
+}
+
+input#foto {
+    width: 83% !important;
+}
+button#btnGuardarUsuario {
+    color: #FFF;
+    background: #328998;
+    padding: 8px;
+    margin: 5px auto;
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    box-shadow: inset 0 0 0 0 #0BF;
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+    border-radius: 4px;
+    position: relative;
+    top: 1em;
+}
+button#btnGuardarUsuario:hover {
+    box-shadow: inset 0 -70px 0 0 #08B;
+}
+div.uploadFile {
+    background-color: #3468af;
+    width: 64%;
+    height: 2em;
+    position: relative;
+    top: 4px;
+    margin-left: 5.2em;
+    cursor: pointer !important;
+}
+#uploadFileEdit {
+    background-color: rgb(173, 48, 68);
+    width: 6em;
+    height: 2em;
+    position: absolute;
+    cursor: pointer !important;
+    box-shadow: 0 0 0 0;
+    top: 18.2em;
+    margin: auto;
+    left: 18.2em;
+    z-index: 1;
+}
+p#txtUploadFile{
+    color: white;
+    font-size: 12px;
+    position: relative;
+    top: 9px;
+}
+
+input#foto{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+/*PRELOADER PARA FORMULARIO EDITAR*/
+#preloader{
+    background-color: #394264;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999 !important;
+    width: 100%;
+    height: 100% !important;
+  }
+  #status{
+    background: url("../img/preloader2.GIF") no-repeat;
+    width: 128px;
+    height: 128px;
+    margin: auto;
+    margin-top: 20%;
+  }
+  /* CIERRA PRELOADER PARA FORMULARIO EDITAR*/
+  #btnModUser {
+    /* background: red; */
+    /* margin: auto !important; */
+    position: absolute;
+    left: 12em;
+    top: 21em !important;
+}
+img.optionTable{
+    margin-right: 1em;
+    cursor: pointer;
+}
+  .error_input{
+    border: 1px solid #FF0606 !important;
+}
+.msgError {
+    background: rgb(255, 57, 57) url("../img/icon/duplicado.png") no-repeat;
+    width: 66%;
+    height: 2.2em;
+    border-radius: 2px;
+    background-position: 17.6em 6px;
+    cursor: pointer;
+    display: none;
+    margin: auto;
+    position: relative;
+    top: -1em;
+}
+p.textError {
+    color: white;
+    position: absolute;
+    margin: 9px .5em;
+}
+
